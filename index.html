@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nagendra Reddy Koppula - Data Engineer Professional Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <title>Nagendra Reddy Koppula</title>
+</head>
+<body>
+    <header>
+        <div class="logo">NR</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Nagendra Data Engineer.pdf" target="_blank" title="View Resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro" id="about">
+            <div class="content">
+                <div class="text-section">
+                    <h1 class="animated-text">Hello,</h1>
+                    <h2 class="animated-text">I'm Nagendra Reddy</h2>
+                    <p class="animated-text" style = "text-align: justify;">
+                        Hello, I'm Nagendra Reddy, I've Overall 5 years experience as a Data Engineer skilled in architecting and implementing scalable data solutions across AWS, Azure, and GCP. Proficient in integrating AI/ML models Vertex AI, Azure ML into data pipelines to generate business insights. Experience includes building end-to-end ETL workflows, data lakes, and streaming analytics for diverse industries healthcare, telecom, automotive, insurance.
+                        Good Communication, Presentation, Decision Making Skills, Understanding Customer Requirements, Good Team player and always tries to lead the team with good efficient output.
+                        
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/nagu-reddy/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Nagendrareddy99/" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:koppula99@gmail.com" target="_blank" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="Nag.png" alt="Nagendra Reddy Koppula">
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Project Section -->
+        <section<section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card" onclick="showProjectDetails('project1')">
+                    <h3>AI-Powered Customer Insights Platform</h3>
+                    <p style = "text-align: justify;">Developed an end-to-end analytics platform to derive actionable insights from large-scale customer interaction data. The system integrated Azure Databricks, Azure Data Lake, and Azure Machine Learning to analyze customer behavior, predict churn, and recommend retention strategies.<br><br>
+                        Key Features:<br>
+                      <ul>
+                      <li>Built and orchestrated data pipelines in Azure Databricks to process millions of records from CRM and transactional systems.</li>
+                      <li>Developed machine learning models using Azure ML and PySpark MLlib to predict customer churn and recommend personalized offers.</li>
+                      <li>Created interactive Power BI dashboards for real-time visualization of customer engagement metrics.</li>
+                      <li>Collaborated with business stakeholders to translate data insights into actionable marketing strategies, increasing customer retention by 25%.</li>
+                    </ul>
+                    </p>
+                </div>
+        
+                <!-- Project 2 -->
+                <div class="project-card" onclick="showProjectDetails('project2')">
+                    <h3>Real-Time Logistics Monitoring System</h3>
+                    <p style = "text-align: justify;">Designed and implemented a real-time logistics and supply chain monitoring solution that tracks fleet movement, predicts delivery delays, and optimizes routes using Azure Event Hub and Azure Databricks.<br><br>
+                        Key Features:<br>
+                <ul>
+                    <li>Built a streaming data pipeline using Azure Event Hub and Databricks Structured Streaming for ingesting telemetry data from IoT sensors in delivery vehicles.</li>
+                    <li>Developed geospatial analytics models in PySpark to detect route inefficiencies and anomalies in delivery performance.</li>
+                    <li>Applied AI-driven forecasting models to predict potential delays and reroute shipments dynamically, reducing delivery delays by 20%.</li>
+                    <li>Integrated with Power BI dashboards for real-time visualization of fleet performance and delay predictions.</li>
+                 </ul>   
+                </p>
+                </div>
+
+                 <!-- Project 3 -->
+                <div class="project-card" onclick="showProjectDetails('project2')">
+                    <h3>Scalable Data Warehouse for E-commerce Analytics</h3>
+                    <p style = "text-align: justify;">Architected a cloud-based data warehouse solution to unify e-commerce sales, customer, and inventory data from multiple systems, improving analytics and decision-making speed across departments.<br><br>
+                      Key Features:<br>
+                <ul>
+                <li>Designed a star schema data model and implemented ETL pipelines using Azure Data Factory and Databricks to extract, transform, and load data into Azure Synapse Analytics.</li>
+                <li>Automated data quality checks and data lineage tracking to ensure accuracy and consistency across all datasets.</li>
+                <li>Optimized SQL queries and partitioning strategies, reducing report generation time by 50%.</li>
+                <li>Built executive dashboards in Power BI for analyzing KPIs such as sales trends, conversion rates, and customer acquisition metrics.</li>
+                 </ul>
+                </p>
+                </div>
+            </div>
+        
+            <!-- Modal for Project Details -->
+            <div id="project-details-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </section> 
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for project collaborations, opportunities!</p>
+            
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        
+            <!-- Social Links -->
+            <div class="social-links">
+                <h3>Connect with me:</h3>
+                <a href="https://www.linkedin.com/in/nagu-reddy" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Nagendrareddy99" target="_blank">GitHub</a>
+                <a href="mailto:koppula199@gmail.com">Email</a>
+            </div>                         
+    </main>
+
+    <footer>
+        <p>© 2024 Nagendra Reddy All Rights Reserved.</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nagu-reddy" target="_blank">Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Nagendrareddy99" target="_blank">Profile</a></p>
+        <p>Email:  <a href="mailto:koppula199@gmail.com" target="_blank"> Email I'd</a></p>
+    </footer>
+</body>
+</html>
